@@ -1,3 +1,9 @@
+**Problem 279B:** https://codeforces.com/problemset/problem/279/B
+* Rating: 1400.
+* Solved Tuesday, February 11, 2025 first try.
+* You need to calculate the longest subarray whose elements do not sum more than a given value.
+* It is a classic example of the sliding window technique.
+
 **Problem 429B:** https://codeforces.com/problemset/problem/492/B
 * Rating: 1200.
 * Solved Sunday, February 9, 2025 first try.
