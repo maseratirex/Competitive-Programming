@@ -1,3 +1,5 @@
+**Codeforces account:** https://codeforces.com/profile/maseratirex
+
 **Problem 489C:** https://codeforces.com/problemset/problem/489/C
 * Rating: 1400.
 * Solved Wednesday, February 12, 2025 first try.
