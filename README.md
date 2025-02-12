@@ -1,3 +1,10 @@
+**Problem 489C:** https://codeforces.com/problemset/problem/489/C
+* Rating: 1400.
+* Solved Wednesday, February 12, 2025 first try.
+* Your task is to find the smallest and the largest of the numbers that have d digits and sum of digits s or output -1 -1 if no integers match the constraints.
+* To find the minimum integer, I maximized the right-most digits from right to left with the constraint that the left-most digit had to be at least 1 (or 0 if the number has 1 digit).
+* To find the maximum integer, I maximized the left-most digits from left to right.
+
 **Problem 520B:** https://codeforces.com/problemset/problem/520/B
 * Rating: 1400.
 * Solved Tuesday, February 11, 2025 first try.
