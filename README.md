@@ -1,3 +1,15 @@
+**Problem 520B:** https://codeforces.com/problemset/problem/520/B
+* Rating: 1400.
+* Solved Tuesday, February 11, 2025 first try.
+* You have two moves: n -= 1 and n *= 2. Output the minimum number of moves needed to get to m.
+* My solution, which ended up being optimal, was a math-heavy application of divide and conquer.
+* If n > m, subtracting n - m times gets us to m.
+* If n == m, output 0.
+* If n < m, approach by cases:
+  * If m is odd, then add 1. The result is m + 1 = 2k, where k is an integer. We can get from n to 2k by moving to k then multiplying by 2; we can get from 2k to m by subtracting 1.
+  * If m is even, then we can get to m by getting to k = m/2 and multiplying by 2.
+  * Thus, you now need to calculate the minimum number of moves to get from n to k.
+
 **Problem 279B:** https://codeforces.com/problemset/problem/279/B
 * Rating: 1400.
 * Solved Tuesday, February 11, 2025 first try.
