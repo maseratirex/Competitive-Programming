@@ -1,5 +1,12 @@
 **Codeforces account:** https://codeforces.com/profile/maseratirex
 
+**Problem 1526B:** https://codeforces.com/problemset/problem/1526/B
+* Rating: 1400.
+* Solved Thursday, February 13, 2025 first try.
+* Determine if an integer can be expressed as a sum of 11's, 111's, 1111's, etc.
+* For example, 144 is 11 + 11 + 11 + 111, so "YES" would be this example answer.
+* I noticed 1111 = 11 * 100 + 11, and 11111 = 111 * 100 + 11. In other words, the problem is reduced to "Determine if there exist positive integers a and b such that 11a + 111b = x." Number theory solved the rest.
+
 **Problem 489C:** https://codeforces.com/problemset/problem/489/C
 * Rating: 1400.
 * Solved Wednesday, February 12, 2025 first try.
