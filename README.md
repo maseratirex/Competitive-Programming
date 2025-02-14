@@ -1,5 +1,10 @@
 **Codeforces account:** https://codeforces.com/profile/maseratirex
 
+**Problem 698A:** https://codeforces.com/problemset/problem/698/A
+* Rating: 1400.
+* Solved Friday, February 14, 2025 first try.
+* A fun 2D DP
+
 **Problem 1526B:** https://codeforces.com/problemset/problem/1526/B
 * Rating: 1400.
 * Solved Thursday, February 13, 2025 first try.
