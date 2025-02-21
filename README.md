@@ -1,4 +1,9 @@
 **Codeforces account:** https://codeforces.com/profile/maseratirex
+**Problem 479C:** https://codeforces.com/problemset/problem/479/C
+* Rating: 1400.
+* Solved Thursday, February 20, 2025 first try.
+* A simple greedy problem made difficult by sorting pairs. I created a template class for sorting integer pairs in the future.
+* Or, use a 2-element array for a pair.
 
 **Problem 698A:** https://codeforces.com/problemset/problem/698/A
 * Rating: 1400.
