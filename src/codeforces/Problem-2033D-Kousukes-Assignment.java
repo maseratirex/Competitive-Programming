@@ -1,6 +1,5 @@
-// https://codeforces.com/problemset/problem/50/A
 import java.io.*;
-import java.util.StringTokenizer;
+import java.util.*;
 
 public class Main {
     static class FastReader {
@@ -55,12 +54,24 @@ public class Main {
     public static void main(String[] args) throws Exception {
         FastReader s = new FastReader();
         PrintWriter out = new PrintWriter(new OutputStreamWriter(System.out));
-        int rows = s.nextInt();
-        int cols = s.nextInt();
-        if(rows % 2 == 0 || cols % 2 == 0) {
-            out.println(rows * cols/2);
-        } else {
-            out.println((rows - 1)/2 * cols + cols/2);
+
+        int t = s.nextInt();
+        while(t-- > 0) {
+            int n = s.nextInt();
+            int total_beautiful_segments = 0;
+            int[] running_sums = new int[n];
+            int l = 0;
+            for(int i = 0; i < n; i++) {
+                int element = s.nextInt();
+                for(int j = l; j <= i; j++) {
+                    running_sums[j] += element;
+                    if(running_sums[j] == 0) {
+                        l = i + 1;
+                        total_beautiful_segments++;
+                    }
+                }
+            }
+            out.println(total_beautiful_segments);
         }
         out.close();
     }

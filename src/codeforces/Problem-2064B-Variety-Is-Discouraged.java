@@ -70,9 +70,7 @@ public class Main {
             }
             int minL = 0;
             int maxR = -1;
-            int l = 0;
-            int r = 0;
-            for(; l < n && r < n; r++) {
+            for(int l = 0, r = 0; l < n && r < n; r++) {
                 if(counts.get(numbers[r]) > 1) {
                     l = r + 1;
                 } else {
