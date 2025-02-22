@@ -4,6 +4,13 @@
 * Java Main class with main method and fast scanning and boolean logic to choose input and output from standard in/out or in.txt/out.txt
 * Java comparable Pair class for problems with sorting pairs
 
+**Problem 1324D:** https://codeforces.com/problemset/problem/1324/D
+* Rating: 1400.
+* Solved Saturday, February 22, 2025 second try.
+* A simple two sum-like problem.
+* I suspected that integer overflow might occur when adding two topics. However, I missed that the number of good topics (in the worst case, 200000(200000 + 1)/2) could well exceed 2^31 - 1, and I needed to change its type to a long data structure.
+* I learned that wild card imports only slightly increase compilation time.
+
 **Problem 479C:** https://codeforces.com/problemset/problem/479/C
 * Rating: 1400.
 * Solved Thursday, February 20, 2025 first try.
