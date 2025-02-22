@@ -1,16 +1,14 @@
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.util.StringTokenizer;
+import java.io.*;
+import java.util.*;
 
 public class Main {
     static class FastReader {
         BufferedReader br;
         StringTokenizer st;
 
-        public FastReader() {
-            br = new BufferedReader(
-                new InputStreamReader(System.in));
+        public FastReader(boolean useStandardInput) throws FileNotFoundException {
+             br = useStandardInput ? new BufferedReader(new InputStreamReader(System.in))
+                     : new BufferedReader(new FileReader("in.txt"));
         }
 
         String next() {
@@ -54,17 +52,31 @@ public class Main {
         }
     }
 
-    public static void main(String[] args)
-    {
-        FastReader s = new FastReader();
-        int n = s.nextInt();
-        int k = s.nextInt();
-        int count = 0;
-        while (n-- > 0) {
-            int x = s.nextInt();
-            if (x % k == 0)
-                count++;
+    public static void main(String[] args) throws Exception {
+        boolean useStandardInputOutput = true;
+        FastReader s = new FastReader(useStandardInputOutput);
+        PrintWriter out = new PrintWriter(useStandardInputOutput ? new OutputStreamWriter(System.out) : new FileWriter("out.txt"));
+
+        int numTopics = s.nextInt();
+        int[] topicDifferences = new int[numTopics];
+        for(int topic = 0; topic < numTopics; topic++) {
+            topicDifferences[topic] += s.nextInt();
         }
-        System.out.println(count);
+        for(int topic = 0; topic < numTopics; topic++) {
+            topicDifferences[topic] -= s.nextInt();
+        }
+        Arrays.sort(topicDifferences);
+        long numGoodTopicPairs = 0;
+        for(int l = 0, r = numTopics-1; l < r; ) {
+            if(topicDifferences[l] + topicDifferences[r] > 0) {
+                // All pairs of topics (i, r) are good for l <= i < r
+                numGoodTopicPairs += r - l;
+                r--;
+            } else {
+                l++;
+            }
+        }
+        out.println(numGoodTopicPairs);
+        out.close();
     }
 }

@@ -1,4 +1,9 @@
 **Codeforces account:** https://codeforces.com/profile/maseratirex
+
+**Templates:**
+* Java Main class with main method and fast scanning and boolean logic to choose input and output from standard in/out or in.txt/out.txt
+* Java comparable Pair class for problems with sorting pairs
+
 **Problem 479C:** https://codeforces.com/problemset/problem/479/C
 * Rating: 1400.
 * Solved Thursday, February 20, 2025 first try.
