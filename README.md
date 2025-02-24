@@ -4,6 +4,15 @@
 * Java Main class with main method and fast scanning and boolean logic to choose input and output from standard in/out or in.txt/out.txt
 * Java comparable Pair class for problems with sorting pairs
 
+
+**Problem 515C:** https://codeforces.com/problemset/problem/515/C
+* Rating: 1400.
+* Solved Monday, February 24, 2025 first try.
+* Given an input string of n digits, output the largest number such that none of its digits are 0 or 1 and the product of the factorials of each of its digits is equivalent to the product of the factorials of each of the digits of the input string.
+* For example, the product of the factorials of each of the digits of an input string "1234" is (1!)(2!)(3!)(4!) = (3!)(3!)(2!)(2!)(2!), so we would output 33222.
+* I found the solution almost immediately, but spent a bit more time than I would have liked implementing it because I wanted to write a fast and fancy solution.
+* In retrospect, Codeforces contests only care if you solve the problem with the given time and space constraints. It would have been totally appropriate to write "output7String = '7' + output7String" rather than using a String Builder.
+
 **Problem 1195C:** https://codeforces.com/problemset/problem/1195/C
 * Rating: 1400.
 * Solved Sunday, February 23, 2025 second try.
