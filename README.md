@@ -4,6 +4,12 @@
 * Java Main class with main method and fast scanning and boolean logic to choose input and output from standard in/out or in.txt/out.txt
 * Java comparable Pair class for problems with sorting pairs
 
+**Problem 1195C:** https://codeforces.com/problemset/problem/1195/C
+* Rating: 1400.
+* Solved Sunday, February 23, 2025 second try.
+* You can opt to include a player using the maximal height obtainable if you used the diagonal player or using the maximal height obtainable using players two columns before.
+* I learned that Java 21 has made performance improvements over Java 8. This is in general, and perhaps the smaller size of a competitive programming solution reduces the performance gain.
+
 **Problem 1324D:** https://codeforces.com/problemset/problem/1324/D
 * Rating: 1400.
 * Solved Saturday, February 22, 2025 second try.
