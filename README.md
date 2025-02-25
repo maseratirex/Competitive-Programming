@@ -3,7 +3,15 @@
 **Templates:**
 * Java Main class with main method and fast scanning and boolean logic to choose input and output from standard in/out or in.txt/out.txt
 * Java comparable Pair class for problems with sorting pairs
+* Java BitwiseOperations class for defining common bitwise operations
 
+**Problem 2072D:** https://codeforces.com/problemset/problem/2072/D
+* Rating: unknown rating.
+* Solved Tuesday, February 25, 2025 first try.
+* You are given an array of integers.
+* You may move the first element of a sequence to the end of the sequence, shifting all the other elements back. You must identify a range of values [i, j] that minimizes the number of decreasing pairs in the array.
+* To choose the optimal i and j, you must identify a start value that is greater or equal to most of the following values. For example, if your input is [4, 1, 2, 5, 6, 3], then 4 is greater than or equal to 1, 2, and 3. However, using the range of indices [1, 6] would result in [1, 2, 5, 6, 3, 4]. Thus, you have introduced the decreasing pairs (5, 4) and (6, 4). A more optimal range is [1, 3] for a result of [1, 2, 4, 5, 6, 3].
+* I scanned the array from left to right and formed all the possible ranges, scoring them by adding 1 for each decreasing pair removed and subtracting 1 for each decreasing pair introduced. 
 
 **Problem 515C:** https://codeforces.com/problemset/problem/515/C
 * Rating: 1400.
