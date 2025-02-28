@@ -5,6 +5,18 @@
 * Java comparable Pair class for problems with sorting pairs
 * Java BitwiseOperations class for defining common bitwise operations
 
+**Problem 2072C:** https://codeforces.com/problemset/problem/2072/C
+* Rating: unknown rating.
+* Solved Tuesday, February 25, 2025 first try.
+* This problem required unraveling several layers. I highlight one: determining if there are any bits set in a number x that are not set in a number y.
+* We can create a truth table where we know the input bits i and j and the output bit but do not know the expression of i and j that generates the output:
+  * Inputs i and j, output is a constant.
+  * i = 0, j = 0, output 0
+  * i = 0, j = 1, output 0
+  * i = 1, j = 0, output 1
+  * i = 1, j = 1, output 0
+* By sum of products, the output is equivalent to i & ~j. Thus, if i & ~j is greater than 0, there is a bit set in i that is not set in j.
+
 **Problem 2072D:** https://codeforces.com/problemset/problem/2072/D
 * Rating: unknown rating.
 * Solved Tuesday, February 25, 2025 first try.
