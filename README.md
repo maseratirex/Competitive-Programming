@@ -5,6 +5,12 @@
 * Java comparable Pair class for problems with sorting pairs
 * Java BitwiseOperations class for defining common bitwise operations
 
+**Problem 1348B:** https://codeforces.com/problemset/problem/1348/B
+* Rating: 1400.
+* Solved Saturday, March 1, 2025 third try.
+* The implementation had to satisfy multiple constraints, making it hard to satisfy all the problem requirements on the first submission.
+* I recognized the pattern after a little while of getting lost in the math. I can see "beautiful" subarrays arising in future problems, so the time I spent understanding them was well spent.
+
 **Problem 2072C:** https://codeforces.com/problemset/problem/2072/C
 * Rating: unknown rating.
 * Solved Tuesday, February 25, 2025 first try.
