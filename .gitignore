@@ -11,3 +11,5 @@ out.txt
 main
 main.cpp
 *.o
+/Makefile
+/src/
