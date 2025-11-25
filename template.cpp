@@ -8,6 +8,7 @@
 #include <stack>
 #include <cmath>
 #include <numeric>
+#include <unordered_map>
 
 using namespace std;
 
@@ -23,8 +24,8 @@ int main() {
     freopen("in.txt", "r", stdin);
     freopen("out.txt", "w", stdout);
 #endif
-    ios::sync_with_stdio(false);
-    cin.tie(0);
+    ios::sync_with_stdio(false); // Don't sync cin with scanf
+    cin.tie(NULL); // Don't flush cout on call to cin
 
     int t = 1;
     cin >> t;
