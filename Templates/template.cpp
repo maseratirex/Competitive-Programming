@@ -10,6 +10,8 @@
 #include <numeric>
 #include <unordered_map>
 
+#define ll long long
+
 using namespace std;
 
 const long long MOD = 1e9 + 7;
